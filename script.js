@@ -1,3 +1,13 @@
+async function loadLatestVersion() {
+    res = await fetch('https://api.github.com/repos/catarium/catarium.github.io/releases/latest', {method: 'GET'});
+    res = await res.json()
+    if (Boolean(res)) {
+        download_link = document.getElementById('latest_link')
+        download_link.href = `https://github.com/catarium/catarium.github.io/releases/latest/download/${res.assets[0].name}`
+    }
+}
+
+
 async function loadVersions() {
     res = await fetch('https://api.github.com/repos/catarium/catarium.github.io/releases', {method: 'GET'});
     res = await res.json()
