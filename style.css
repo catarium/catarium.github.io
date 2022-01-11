@@ -35,7 +35,7 @@ a:hover {
     }
     .avatar {
         margin: 0 20% !important;
-        width: 60% !important;
+        width: 60% !important   ;
     }
 
     .contacts {
@@ -44,7 +44,11 @@ a:hover {
     }
 
     .contact {
-        margin: 0 0 !important;
+        margin: 0 1% !important;
+    }
+
+    .project-link-stars {
+        flex-direction: column-reverse;
     }
 }
 
