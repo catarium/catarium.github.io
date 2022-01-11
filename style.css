@@ -1,67 +1,128 @@
-.landing-name {
-    background-color: black;
+body {
+    background-color: #212529;
+}
+
+a {
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20em;
+}
+
+a:hover {
+    color: gray
 }
 
 .block {
-    margin-top: 2%;
-    text-align: center;
-}
-
-.version-title {
     color: white;
-    margin-left: 1%;
+    font-size: 150%;
 }
 
-.versions-block {
+.block-title {
+    margin-left: 1%;
+    font-size: 200%;
+}
+
+.first-block {
+    margin-top: 5%;
+    display: flex;
+    padding: 1em;
+    background-color: rgba(248, 249, 250);
+    color: black;
+}
+
+.block-el {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.nickname-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.nickname {
+    font-size: 400%;
+}
+
+.about {
+    font-size: 240%;
+}
+
+.skills {
+    font-size: 150%;
+}
+
+.projects-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+    border-width: 4px;
+    border-color: gray;
+    border-style: solid;
+}
+
+.project-link-stars {
     display: flex;
     justify-content: space-between;
-    font-size: 2em;
-    background-color: gray;
-    padding: 1.5%;
 }
 
-.version-download-link {
-    text-decoration: none;
+.project-link {
     color: white;
-    margin-right: 1%;
-    padding-right: 1%;
-    padding-left: 1%;
-    background-color: green;
-}
-
-.version-download-link:hover {
-    color: white;
-    background-color: rgb(8, 92, 8);
-}
-
-.download-latest-block:hover {
-
-}
-
-.download-latest-link {
-    margin-top: 2em;
-    background-color: darkslategray;
-    color: white;
-    text-decoration: none;
-    padding: 1%;
     font-size: 150%;
-    padding-left: 3%;
-    padding-right: 3%;
 }
 
-.download-latest-link:hover {
-    color: white;
-    text-decoration: none;
-    font-size: 170%;
-    padding: 1.2%;
-    padding-left: 3.2%;
-    padding-right: 3.2%;
-    /* -webkit-box-shadow: 4px 1px 8px 26px rgba(34, 60, 80, 0.38);
-    -moz-box-shadow: 4px 1px 8px 26px rgba(34, 60, 80, 0.38); */
-    box-shadow: 0px 0px 10px 10px rgb(112, 112, 112, 0.5);
+.project-stars-count {
+    font-size: 120%;
+}
+
+.bi-star {
+    display: inline-block;
+}
+
+.info-button {
+
+}
+
+/* скрываем чекбоксы и блоки с содержанием */
+.hide {
+    display: none;
+}
+
+.hide + .info-button ~ .info-content {
+    display: none;
+}
+
+.hide + .info-button {
+    border-bottom: 1px dotted;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.info-button:hover   {
+    color: gray;
+}
+
+.hide:checked + .info-button {
+    border-bottom: 0;
+}
+
+.hide:checked + .info-button + .info-content {
+    display: block;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 150%;
+}
+
+.contact {
+    margin: 0 20%;
 }
