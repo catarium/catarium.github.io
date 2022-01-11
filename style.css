@@ -28,9 +28,34 @@ a:hover {
     color: black;
 }
 
+@media screen and (max-width: 800px){
+    .first-block{
+        margin-top: 15%;
+        flex-direction: column;
+    }
+    .avatar {
+        margin: 0 20% !important;
+        width: 60% !important;
+    }
+
+    .contacts {
+        flex-direction: column;
+        justify-content: none;
+    }
+
+    .contact {
+        margin: 0 0 !important;
+    }
+}
+
 .block-el {
     margin-left: 1%;
     margin-right: 1%;
+}
+
+.avatar {
+    height: auto;
+    width: 30%;
 }
 
 .nickname-about {
