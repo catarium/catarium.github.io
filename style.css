@@ -39,12 +39,12 @@ a:hover {
     }
 
     .contacts {
+        padding: 0 1% !important;
         flex-direction: column;
         justify-content: none;
     }
 
     .contact {
-        margin: 0 1% !important;
     }
 
     .project-link-stars {
@@ -58,7 +58,7 @@ a:hover {
 }
 
 .avatar {
-    height: auto;
+    height: 30%;
     width: 30%;
 }
 
@@ -150,8 +150,5 @@ a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 150%;
-}
-
-.contact {
-    margin: 0 20%;
+    padding: 0 20%;
 }
